@@ -4,58 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="930ebfd0-021c-4ad1-a196-4e6c311f5de3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hahaton.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/HahatonBeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/config/FirebaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/dto/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/dto/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/dto/UserCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/dto/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/dto/UserDetailsWithId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/dto/UserLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/dto/UserRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/entity/FirebaseToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/entity/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/entity/University.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/model/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/controller/GroupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/controller/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/controller/UniversityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/repository/FirebaseTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/repository/GroupRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/repository/UniversityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/service/FirebaseMessagingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/service/GroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/service/JwtUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/service/UniversityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/rest/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/util/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/java/com/pivo/hahatonbe/util/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/main/resources/hahaton-2bbfc-firebase-adminsdk-ejxcc-deef59c611.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hahaton-be/src/test/java/com/pivo/hahatonbe/HahatonBeApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="930ebfd0-021c-4ad1-a196-4e6c311f5de3" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/hahaton-be" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -141,8 +91,16 @@
       <workItem from="1677811666285" duration="6785000" />
       <workItem from="1677834566618" duration="716000" />
       <workItem from="1677888493019" duration="183000" />
-      <workItem from="1677935649175" duration="7082000" />
+      <workItem from="1677935649175" duration="7445000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1677946024656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677946024656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,5 +116,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
