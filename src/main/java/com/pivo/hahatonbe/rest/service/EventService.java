@@ -5,6 +5,7 @@ import com.pivo.hahatonbe.model.dto.Note;
 import com.pivo.hahatonbe.model.entity.Auditory;
 import com.pivo.hahatonbe.model.entity.Event;
 import com.pivo.hahatonbe.model.entity.FirebaseToken;
+import com.pivo.hahatonbe.model.entity.Group;
 import com.pivo.hahatonbe.model.entity.Location;
 import com.pivo.hahatonbe.model.entity.Schedule;
 import com.pivo.hahatonbe.model.entity.User;
@@ -50,25 +51,29 @@ public class EventService {
         String content = "Event: ${:1} on ${:2} has been changed, please check it's new status"
                 .replace("${:1}", eventById.getName())
                 .replace("${:2}", dateMap(eventById.getDate()));
-        eventById.setDate(event.getDate());
-        eventById.setAuditory(event.getAuditory());
-        eventById.setLocation(event.getLocation());
-        List<User> users = eventById.getSchedule().getGroup().getUsers();
-        List<FirebaseToken> firebaseTokens = new ArrayList<>();
-        users.forEach(user -> firebaseTokens.addAll(user.getTokens()));
-        userNotificationService.sendNotificationToAll(
-                UserNotification.builder()
-                        .subject(subject)
-                        .content(content)
-                        .date(new Date())
-                        .build(),
-                users.stream().map(User::getId).collect(Collectors.toList())
-        );
-        firebaseMessagingService.sendNotificationToAll(
-                Note.builder()
-                        .subject(subject)
-                        .content(content)
-                        .build(), firebaseTokens);
+        eventById.setDate(event.getDate() == null ? eventById.getDate() : event.getDate());
+        eventById.setAuditory(event.getAuditory() == null ? eventById.getAuditory() : event.getAuditory());
+        eventById.setLocation(event.getLocation() == null ? eventById.getLocation() : event.getLocation());
+        Group group = eventById.getSchedule().getGroup();
+        if (group != null) {
+            List<User> users = group.getUsers();
+            userNotificationService.sendNotificationToAll(
+                    UserNotification.builder()
+                            .subject(subject)
+                            .content(content)
+                            .date(new Date())
+                            .build(),
+                    users.stream().map(User::getId).collect(Collectors.toList())
+            );
+        }
+//        List<FirebaseToken> firebaseTokens = new ArrayList<>();
+//        users.forEach(user -> firebaseTokens.addAll(user.getTokens()));
+
+//        firebaseMessagingService.sendNotificationToAll(
+//                Note.builder()
+//                        .subject(subject)
+//                        .content(content)
+//                        .build(), firebaseTokens.stream().filter(firebaseToken -> firebaseToken != null && firebaseToken.getToken() != null).collect(Collectors.toList()));
         return eventRepository.save(eventById);
     }
 

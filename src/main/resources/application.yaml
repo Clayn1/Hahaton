@@ -2,8 +2,8 @@ server:
   port: 5000
 spring:
   datasource:
-#    url: jdbc:postgresql://hahaton-1.crqaoxtktopl.eu-central-1.rds.amazonaws.com:5432/hahaton
-    url: jdbc:postgresql://localhost:5432/hahaton
+    url: jdbc:postgresql://hahaton-1.crqaoxtktopl.eu-central-1.rds.amazonaws.com:5432/hahaton
+#    url: jdbc:postgresql://localhost:5432/hahaton
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
