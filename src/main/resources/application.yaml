@@ -1,0 +1,39 @@
+server:
+  port: 5000
+spring:
+  datasource:
+#    url: jdbc:postgresql://hahaton-1.crqaoxtktopl.eu-central-1.rds.amazonaws.com:5432/hahaton
+    url: jdbc:postgresql://localhost:5432/hahaton
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+  security:
+    user:
+      name: admin
+      password: admin
+      roles: "ROLE_ADMIN"
+cloud:
+  aws:
+    region:
+      static: eu-central-1
+      auto: false
+    stack:
+      auto: false
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
